@@ -1,176 +1,334 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>doc</title>
-        <link rel="stylesheet" href="website.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body>
-        <label>
-            <input type="checkbox">
-            <div class="toggle">
-                <span class="top_line common"></span>
-                <span class="middle_line common"></span>
-                <span class="bottom_line common"></span>
+<html data-wf-page="6666cae70e3b07e8a0ec4870"
+    data-wf-site="6666cae60e3b07e8a0ec4322">
+
+<head>
+    <meta charset="utf-8" />
+    <title>jaundice</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link
+        href="website.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="Java.js" type="text/javascript"></script>
+    <script
+        type="text/javascript">WebFont.load({ google: { families: ["Vollkorn:400,400italic,700,700italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Oswald:200,300,400,500,600,700"] } });</script>
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+        role="banner" class="navbar w-nav">
+        <div class="w-container"><a href="#" class="brand-block w-clearfix w-nav-brand">
+                <h1 class="logo-title">NINJA</h1>
+            </a>
+            <nav role="navigation" class="nav-menu w-nav-menu"><a href="#process" class="nav-link w-nav-link">OUR
+                    NUMBERS</a><a href="#projects" class="nav-link w-nav-link">DATABASE</a><a href="#team"
+                    class="nav-link w-nav-link">team</a><a href="#contact" class="nav-link w-nav-link">contact</a></nav>
+            <div class="menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
             </div>
-            <div class="slide">
-                <h1><u>MENU</u></h1>
-                <ul>
-                        <li><a href= "#"><i class="fas fa-tv"></i>HOME</a></li>
-                        <li><a href= "#ourteam"><i class="far fa-user"></i>MEET OUR TEAM</a></li>
-                        <li><a href= "#dataset"><i class="far fa-folder"></i>DATASET</a></li>
-                        <li><a href= "#"><i class="fas fa-comments"></i>CONTACT US</a></li>
-                </ul>
-            </div>
-        </label>
-        <section id= "hero" style="background-image: url(giphy.gif);">
-            
-          <h3 style="text-align: right;">NINJA</h3>
-<h2 style="text-align: right; color: #FFE4E1;">Non-invasive jaundice estimation using artificial intelligence</h2>
-            
-        </section>
-        <section id="dataset">
-        <h4 style="text-align: center;">Jaundice</h4>
-        <h2 style="color:#FFE4E1; text-align: center;">Our numbers</h2>
-        <p style="color:#FFE4E1; text-align: center;">We have gathered comprehensive data on various aspects of jaundice, including its causes, symptoms, diagnostic methods, treatment options, and potential complications. Our collection encompasses clinical studies, patient records, laboratory analyses, and medical literature reviews to provide a comprehensive understanding of this condition and aid in the development of effective interventions.</p>
-        <div class="col-block stats__col" style="text-align: center;">
-            <div id="totalImages" class="stats__count">0</div>
-            <h3>Total Images Samples</h3>
         </div>
-        <div class="col-block stats__col" style="text-align: center;">
-            <div id="patients" class="stats__count">0</div>
-            <h3>Number of <br>Patients</h3>
+    </div>
+    <div class="header">
+        <div class="w-container">
+            <h1 class="main-heading">NOn-invasive neonate jaundice estimation using artificial intelligence</h1>
+            <div class="divider"></div>
+            <div class="main-subtitle">NINJA</div>
         </div>
-        <div class="col-block stats__col" style="text-align: center;">
-            <div id="samplesPerPatient" class="stats__count" style="text-align: center;">0</div>
-            <h3>No. of samples <br>collected per patient</h3>
+    </div>
+    <div class="about-section"><img
+            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec489a_x-black.png"
+            width="52" alt="" class="x-icon" />
+        <div class="w-container">
+            <p class="about-text">Non-invasive methods for jaundice detection include visual assessments, transcutaneous
+                bilirubinometers, and optical biosensors. These methods aim to alleviate the need for invasive blood
+                tests, which can be painful for newborns. They also help expedite the turnaround time for obtaining
+                results and reduce the risk of iatrogenic anemia.<br /></p><a href="#projects" class="button">Our
+                database</a>
         </div>
-    </section>
-
-    <script>
-            function animateCount(element, target, duration) {
-            let start = 0;
-            const step = Math.ceil(target / (duration / 16)); 
-
-            function updateCount() {
-                start += step;
-                element.textContent = start.toLocaleString();
-
-                if (start < target) {
-                    requestAnimationFrame(updateCount);
-                } else {
-                    element.textContent = target.toLocaleString();
-                }
-            }
-
-            updateCount();
-        }
-
-        
-        animateCount(document.getElementById('totalImages'), 27259, 2000);
-        animateCount(document.getElementById('patients'), 4430, 2000); 
-        animateCount(document.getElementById('samplesPerPatient'), 23678, 2000);
-    </script>
-
-        <section id= "ourteam" class= "section-p1">
-            <h2 style= "color:#FFE4E1; text-align: center;">Our Team</h2>
-            <div class="te-box">
-                <img src= "C:\Users\DELL\OneDrive\Desktop\360_F_232983351_z5CAl79bHkm6eMPSoG7FggQfsJLxiZjY.jpg" height=150 width= 150 >
-                <h6> Name 1 </h6>
+    </div>
+    <div id="process" class="section">
+        <div class="w-container">
+            <h2>OUR NUMBERS </h2>
+            <div class="divider grey"></div>
+            <div class="w-row">
+                <div class="w-col w-col-4">
+                    <div class="grey-icon-wrapper"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4885_icon-target.png"
+                            width="127" alt="" class="big-icon" /></div>
+                    <h3 class="heading">27,000</h3>
+                    <p class="paragraph">TOTAL IMAGE SAMPLES</p>
+                </div>
+                <div class="w-col w-col-4">
+                    <div class="grey-icon-wrapper push-top"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec48a5_icon-design.png"
+                            width="127" alt="" class="big-icon" /></div>
+                    <h3>50,000</h3>
+                    <p class="paragraph-2">NUMBER OF PATIENTS </p>
+                </div>
+                <div class="w-col w-col-4">
+                    <div class="grey-icon-wrapper push-top"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4882_icon-chart.png"
+                            width="127" alt="" class="big-icon" /></div>
+                    <h3>34,000</h3>
+                    <p class="paragraph-3">NO. OF SAMPLES COLLECTED PER PATIENT</p>
+                </div>
             </div>
-            <div class="te-box">
-                <img src= "f5.png" height=150 width= 150 >
-                <h6> Name 2</h6>
+        </div>
+    </div>
+    <h2>DATASET ANNOTATIONS</h2>
+    <div class="divider grey"></div>
+      <div class="container">
+        <div class="sec">
+          <div class="sec-content">
+            <div class="icon-box">
+              <img src="CUBE.jpg" class="icon" alt="Box Icon">
+              <div class="icon-title">Annotation Tools</div>
             </div>
-            <div class="te-box">
-                <img src= "f5.png" height=150 width= 150 >
-                <h6> Name 3 </h6>
+            <p>An open-source tool, <a href="https://www.darklabel.io/" class="link">DarkLabel</a> is used to annotate the videos. Click on the link provided to know more about it.</p>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-content">
+            <div class="icon-box">
+              <img src="ANNOTATION.jpg" class="icon" alt="Square Icon">
+              <div class="icon-title">The Process</div>
             </div>
-            <div class="te-box">
-                <img src= "f5.png" height=150 width= 150 >
-                <h6> Name 4 </h6>
+            <p>All the videos are converted into frames and the annotations are provided for each frame. The annotations are mapped back to the original images for validating the dataset.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="sec">
+          <div class="sec-content">
+            <div class="icon-box">
+              <img src="GLOBE.jpg" class="icon" alt="Globe Icon">
+              <div class="icon-title">Representation</div>
             </div>
-        </section>
-        <section id="contact" style="background-image: url(form.jpg); font-family: Arial, Helvetica, sans-serif; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;height:100vh;
-        width:100%;
-        background-size: cover;
-        background-position: top 25% right 0 bottom 20% ;
-        padding: 0 80px;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content:center; ">
-	<div class="container" style="width: 950px;
-    margin: 80px auto;
-    background-color: white;
-    line-height: 1.5;">
-		<div class="text-center" style="        text-align: center;        ">
-			<h1>CONTACT US</h1>
-			<div>
-				“All looks yellow to a jaundiced eye that habitually compares everything to something better.</div>
-			</div>
-		</div>
-		<div class="content" style="display: flex;
-        margin-top: 40px;" >
-			<div class="col-1" style="background-color: white; text-align: left;" >
-				<div class="address-line">
-					<img alt="location" src="image/marker.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Address</div>
-						<div>1002 West 5th Ave,</div>
-						<div>Alaska, New York,</div>
-						<div>55060.</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<img alt="location" src="image/phone.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Phone</div>
-						<div>12523-4566-8954-8956.</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<img alt="location" src="image/mail.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Email</div>
-						<div>contactemail@gmail.com</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-2">
-				<form>
-					<div class="form-container">
-						<h2 style="color: #daa520;">Send Message</h2>
-						<div class="form-row">
-							<label>Full Name</label>
-							<div>
-								<textarea></textarea>
-							</div>
-						</div>
-						<div class="form-row">
-							<label>Email</label>
-							<div>
-								<textarea></textarea>
-							</div>
-						</div>
-						<div class="form-row">
-							<label>Type your message...</label>
-							<div>
-								<textarea></textarea>
-							</div>
-						</div>
-						<input type="button" class="send-btn" value="Send">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+            <p>Annotations are represented with the help of seven attributes:</p>
+            <ul>
+              <li>Name of object's class</li>
+              <li>Action of Object</li>
+              <li>Object's ID</li>
+              <li>Bounding box Coordinates (x,y,w,h)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-content">
+            <div class="icon-box">
+              <img src="SAMPLE.jpg" class="icon" alt="Brick Icon">
+              <div class="icon-title">Annotation Samples</div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Action</th>
+                  <th>ID</th>
+                  <th>Coordinates(x,y,w,h)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Person</td>
+                  <td>Punching</td>
+                  <td>0</td>
+                  <td>2121, 1579, 60, 112</td>
+                </tr>
+                <tr>
+                  <td>Person</td>
+                  <td>Standing</td>
+                  <td>4</td>
+                  <td>1637, 1523, 73, 101</td>
+                </tr>
+                <tr>
+                  <td>Person</td>
+                  <td>Walking</td>
+                  <td>5</td>
+                  <td>1567, 1542, 55, 121</td>
+                </tr>
+                <tr>
+                  <td>Person</td>
+                  <td>Lying</td>
+                  <td>7</td>
+                  <td>1278, 1826, 90, 11</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <div id="projects" class="section grey">
+        <div class="w-container">
+            <h2>OUR DATABASE</h2>
+            <div class="divider grey"></div>
+            <div class="w-row">
+                <div class="w-col w-col-4 w-col-small-4"><a href="/project-page"
+                        class="project-wrapper w-inline-block"></a></div>
+                <div class="w-col w-col-4 w-col-small-4">
+                    <div class="project-wrapper"><a href="/project-page" class="project-wrapper w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec48a7_proj9.jpg"
+                                sizes="(max-width: 479px) 94vw, (max-width: 991px) 30vw, 300px"
+                                srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec48a7_proj9-p-500x500.jpeg 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec48a7_proj9.jpg 800w"
+                                alt="" />
+                            <div class="project-info">
+                                <h3 class="project-title">CLICK HERE </h3>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="w-col w-col-4 w-col-small-4"></div>
+            </div>
+        </div>
+    </div>
+    <div id="team" class="section">
+        <div class="w-container">
+            <h2>our team</h2>
+            <div class="divider grey"></div>
+            <div class="team-row w-row">
+                <div class="member w-col w-col-3 w-col-small-6"><img
+                        src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d2869ed1889022207139_Screenshot%202024-06-10%20154240.png"
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                        srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d2869ed1889022207139_Screenshot%202024-06-10%20154240-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d2869ed1889022207139_Screenshot%202024-06-10%20154240.png 650w"
+                        alt="" class="team-image" />
+                    <h3 class="team-title">Dr. navdeep kaur (pi)</h3>
+                    <div class="role">Assistant Professor, MCM DAV College for Women, Chandigarh</div>
+                    <div class="social-buttons">
+                                <a href="#" class="social-link w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                width="14" alt="" /></a></div>
+                </div>
+                <div class="member w-col w-col-3 w-col-small-6"><img
+                        src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d316153236ebd52f0aa5_Screenshot%202024-06-10%20154258.png"
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                        srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d316153236ebd52f0aa5_Screenshot%202024-06-10%20154258-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d316153236ebd52f0aa5_Screenshot%202024-06-10%20154258.png 657w"
+                        alt="" class="team-image" />
+                    <h3 class="team-title">Dr. Ajay Mittal (Co-PI)</h3>
+                    <div class="role">Professor,UIET, Panjab University, Chandigarh</div>
+                    <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                width="14" alt="" /></a></div>
+                </div>
+                <div class="member w-col w-col-3 w-col-small-6"><img
+                        src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d31e691fa1a96ef072ba_Screenshot%202024-06-10%20154308.png"
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                        srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d31e691fa1a96ef072ba_Screenshot%202024-06-10%20154308-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d31e691fa1a96ef072ba_Screenshot%202024-06-10%20154308.png 648w"
+                        alt="" class="team-image" />
+                    <h3 class="team-title">Dr. Mandeep K Chawla (Co-PI)</h3>
+                    <div class="role">Assistant Professor, MCM DAV College for Women, Chandigarh</div>
+                    <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                width="14" alt="" /></a></div>
+                </div>
+                <div class="member w-col w-col-3 w-col-small-6"><img
+                        src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d324930517b599399cdd_Screenshot%202024-06-10%20154326.png"
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                        srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d324930517b599399cdd_Screenshot%202024-06-10%20154326-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d324930517b599399cdd_Screenshot%202024-06-10%20154326-p-800.png 800w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d324930517b599399cdd_Screenshot%202024-06-10%20154326.png 908w"
+                        alt="" class="team-image" />
+                    <h3 class="team-title">Dr. Suksham Jain (PI)</h3>
+                    <div class="role">Professor, GMCH-32, Chandigarh</div>
+                    <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                width="14" alt="" /></a></div>
+                </div>
+            </div>
+        </div>
+        <div id="team" class="section">
+            <div class="w-container">
+                <div class="team-row w-row">
+                    <div class="member w-col w-col-3 w-col-small-6"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d32b1162fb026265781e_Screenshot%202024-06-10%20154350.png"
+                            sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                            srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d32b1162fb026265781e_Screenshot%202024-06-10%20154350-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d32b1162fb026265781e_Screenshot%202024-06-10%20154350-p-800.png 800w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d32b1162fb026265781e_Screenshot%202024-06-10%20154350.png 844w"
+                            alt="" class="team-image" />
+                        <h3 class="team-title">Dr. Preeti Aggarwal (Co-PI)</h3>
+                        <div class="role">Assistant Professor, UIET, Panjab University, Chandigarh</div>
+                        <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                    width="14" alt="" /></a></div>
+                    </div>
+                    <div class="member w-col w-col-3 w-col-small-6"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d3312f6cbe73ece9785b_Screenshot%202024-06-10%20154358.png"
+                            sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 22vw, 220px"
+                            srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d3312f6cbe73ece9785b_Screenshot%202024-06-10%20154358-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d3312f6cbe73ece9785b_Screenshot%202024-06-10%20154358-p-800.png 800w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d3312f6cbe73ece9785b_Screenshot%202024-06-10%20154358.png 876w"
+                            alt="" class="team-image" />
+                        <h3 class="team-title">Dr. Deepak Chawla <br />(Co-PI)</h3>
+                        <div class="role">Professor, GMCH-32, Chandigarh</div>
+                        <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                    width="14" alt="" /></a></div>
+                    </div>
+                    <div class="member w-col w-col-3 w-col-small-6"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d72977fe29d63101a8de_Screenshot%202024-06-10%20160613.png"
+                            width="195"
+                            sizes="(max-width: 479px) 81vw, (max-width: 767px) 41vw, (max-width: 991px) 22vw, 195px"
+                            alt=""
+                            srcset="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d72977fe29d63101a8de_Screenshot%202024-06-10%20160613-p-500.png 500w, https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d72977fe29d63101a8de_Screenshot%202024-06-10%20160613.png 681w"
+                            class="team-image" />
+                        <h3 class="team-title">SONALI MEHNDIRATTA</h3>
+                        <div class="role">Project Technician support-III</div>
+                        <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                    width="14" alt="" /></a></div>
+                    </div>
+                    <div class="member w-col w-col-3 w-col-small-6"><img
+                            src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666d6d8b1bd25aac5a7b0f2_Screenshot%202024-06-10%20160443.png"
+                            width="165" alt="" class="team-image" />
+                        <h3 class="team-title">BIPAN TIWARI</h3>
+                        <div class="role">Project Technician support-III</div>
+                        <div class="social-buttons"><a href="#" class="social-link w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/6666cae70e3b07e8a0ec4895_email-icon-black.svg"
+                                    width="14" alt="" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section contact">
+        <h2 class="heading-2">LET’s Get in touch</h2>
+        <div class="w-container">
+            <footer id="footer" class="section footer">
+                <div class="w-container">
+                    <div class="form-wrapper w-form">
+                        <form name="email-form" data-name="Email Form" id="email-form" method="get"
+                            data-wf-page-id="6666cae70e3b07e8a0ec4870"
+                            data-wf-element-id="10e0b33f-b7bf-6f7e-7b31-afaeb14012c0"><input
+                                class="field darker w-input" maxlength="256" name="name" data-name="Name"
+                                placeholder="Name" type="text" id="field" required="" /><input class="field w-input"
+                                maxlength="256" name="email" data-name="Email" placeholder="Email" type="email"
+                                id="field" required="" /><textarea id="field" name="comments" maxlength="5000"
+                                data-name="Comments" placeholder="Your message...." required=""
+                                class="field large w-input"></textarea><input type="submit" data-wait="Please wait..."
+                                class="button form w-button" value="Send Message" /></form>
+                        <div class="success-message w-form-done">
+                            <h1>Thank you!</h1>
+                            <p>Your submission has been received!</p>
+                        </div>
+                        <div class="w-form-fail">
+                            <p>Oops! Something went wrong while submitting the form :(</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="divider grey"></div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6666cae60e3b07e8a0ec4322"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.prod.website-files.com/6666cae60e3b07e8a0ec4322/js/webflow.2e1b7a2a2.js"
+        type="text/javascript"></script>
 </body>
-        </section>
-
-<script src="">
-  
-
+<script>
+    $(document).ready(function(){
+        $("*.w-webflow-badge").removeClass("w-webflow-badge").empty()
+    });
 </script>
-    </body>
 </html>
